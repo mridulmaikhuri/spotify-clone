@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300&display=swap');
+body{
+    background-image: url('background.jpg');
+    background-size: 100% 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#navBar{
+    background-color: 	#0e105d;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+.item{
+    list-style-type: none;
+    padding: 0 0.5vw;
+}
+#navBar ul{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+#logo img{
+    height: 10vh;
+}
+.container{
+    min-height: 65vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 1.5rem auto;
+    width: 70%;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-image: url('bg.jpg');
+    background-size:100% 100%;
+}
+.bottom{
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0px;
+    justify-content:space-between;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 34px;
+    padding: 0 20px;
+}
+.songItem img{
+    width: 32px;
+    margin: 23px 0px;
+    border-radius: 50%;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: 1s ease-in;
+}
