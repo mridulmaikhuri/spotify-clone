@@ -1,5 +1,5 @@
 let songIndex = 1;
-let audioElement = new Audio("songs/1.mp3");
+let audioElement = new Audio("1.mp3");
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
@@ -7,11 +7,11 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 let time = 0;
 
 let songs = [
-    {songName: "Warriyo", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Cielo", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "DEAF KEV", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Different Heaven", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Janji-Heroes-Tonight", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"}
+    {songName: "Warriyo", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Cielo", filePath: "2.mp3", coverPath: "2.jpg"},
+    {songName: "DEAF KEV", filePath: "3.mp3", coverPath: "3.jpg"},
+    {songName: "Different Heaven", filePath: "4.mp3", coverPath: "4.jpg"},
+    {songName: "Janji-Heroes-Tonight", filePath: "5.mp3", coverPath: "5.jpg"}
 ];
 
 songItems.forEach((element,i) => {
@@ -67,7 +67,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((btn)=>{
             document.getElementById("songName").innerText = songs[songIndex - 1].songName;
             element.target.classList.remove('bi-play-circle');
             element.target.classList.add('bi-pause-circle');
-            audioElement.src = `songs/${songIndex}.mp3`;
+            audioElement.src = `${songIndex}.mp3`;
             audioElement.currentTime = t;
             audioElement.play();
             masterPlay.classList.remove("bi-play-circle");
@@ -102,7 +102,7 @@ document.getElementById("previous").addEventListener('click',()=>{
         songIndex --;
     }
     document.getElementById("songName").innerText = songs[songIndex - 1].songName;
-    audioElement.src = `songs/${songIndex}.mp3`;
+    audioElement.src = `${songIndex}.mp3`;
     audioElement.currenTime = 0;
     audioElement.play();
     masterPlay.classList.remove("bi-play-circle");
@@ -123,7 +123,7 @@ document.getElementById("next").addEventListener('click',()=>{
     }
 
     document.getElementById("songName").innerText = songs[songIndex - 1].songName;
-    audioElement.src = `songs/${songIndex}.mp3`;
+    audioElement.src = `${songIndex}.mp3`;
     audioElement.currenTime = 0;
     audioElement.play();
     masterPlay.classList.remove("bi-play-circle");
